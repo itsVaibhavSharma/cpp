@@ -4,6 +4,7 @@
 int main(){
 
 	//Declare array
+   // char message [5]  {"Hello"};   //error
     char message [6]  {"Hello"};
     int data[5] {1,2,3,3,3};
 
