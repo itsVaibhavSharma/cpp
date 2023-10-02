@@ -101,3 +101,20 @@ std::cout << "[" <<i << "] : I love C++" << std::endl;
 } while(i < COUNT);  //condition to be tested
 ```
 the output will still print `[11] : I love C++` for 1 time.
+# Ranged for Loop
+```cpp
+for (rangeDeclaration : rangeExpression) {
+    // code
+}
+```
+- Here, the ranged `for` loop iterates the array num from beginning to end. The `int` variable `var` stores the value of the array element in each iteration.
+```cpp
+//initialize an int array
+int num[3] {1, 2, 3};
+
+//use of ranged for loop
+for (int var : num) {
+//code
+}
+```
+![[Pasted image 20231002213001.png]]
