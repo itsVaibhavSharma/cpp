@@ -117,4 +117,4 @@ for (int var : num) {
 //code
 }
 ```
-![[Pasted image 20231002213001.png]]
+![[Pasted image 20231002213001.png]][Image](https://github.com/itsVaibhavSharma/cpp/blob/main/Pasted%20image%2020231002213001.png)
