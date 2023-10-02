@@ -112,3 +112,61 @@ for(auto c : message){
 std::cout << c;
 }
 ```
+- Direct printing out an array (char)
+
+```cpp
+char message[5] {'H', 'e', 'l', 'l', 'o'}; //no null character
+std::cout << "message : " << message << std::endl;
+```
+Output: `Hello~~`
+- the above is not a good practice because it will print some garbage along with the main array. (`~` is just shown to represent garbage character.)
+#### Null Termination
+```cpp
+char message[] {'H', 'e', 'l', 'l', 'o', '\0'}; //proper null termination i.e. does not define the size of the array
+std::cout << "message : " << message << std::endl;
+std::cout << "size: " << sizeof(message) << std::endl; //6
+
+```
+- the `\0`is the null terminator which tells the terminal that the array is ended
+- the above is a good practice.
+```cpp
+char message[] {'H', 'e', 'l', 'l', 'o'}; //no null character here too i.e. not good practice
+std::cout << "message : " << message << std::endl;
+```
+Output: `HelloHello` but size is 5 only
+
+
+```cpp
+char message[6] {'H', 'e', 'l', 'l', 'o'}; //null character will be added automatically i.e. good practice
+std::cout << "message : " << message << std::endl;
+
+```
+### Literal C-String
+```cpp
+char message [] {"Hello"}; //an implicit '\0' character is appended to the end of the string, making it a c-string
+std::cout << "message: " << message << std::endl;
+std::cout << "size: "<< sizeof(message) << std::endl; //6
+
+// can even have spaces between characters
+char message[] {"Hello World!"};
+std::cout << "message: " << message << std::endl;
+std::cout << "size: "<< sizeof(message) << std::endl; //13
+```
+- Array of char are special but not int
+	```cpp
+	//cant directly print arrays other than that of chars
+	int numbers[] {1,2,3,4,5,6,7,8,9,0};
+	std::cout << "numbers: " << numbers << std::endl;
+```
+- some hex code but not the numbers
+## Bounds of an Array
+- Read beyond bounds : Will read garbage or crash your program
+```cpp
+	int numbers[] {1,2,3,4,5,6,7,8,9,0};
+	std::cout << "numbers[12] : " << numbers[12] << std::endl;
+	numbers[129] = 1000;
+	std::cout << "numbers[129] : " << numbers[129] << std::endl;
+
+```
+
+- Write beyond bounds. The compiler allows it. But you don't own the memory at index 12, so other programs may modify it and your program may read bogus data at a later time. Or you can even corrupt data used by other parts of your program.
