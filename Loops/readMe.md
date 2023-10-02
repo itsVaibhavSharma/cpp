@@ -119,4 +119,5 @@ for (int var : num) {
 ```
 
 
-["Image"](https://github.com/itsVaibhavSharma/cpp/blob/main/Pasted%20image%2020231002213001.png)
+["Image"](https://cdn.programiz.com/sites/tutorial2program/files/cpp-ranged-for-loop.png)
+
