@@ -26,12 +26,14 @@ std::cout << "scores[9] : " << scores[9] << std::endl;
 	std::cout << "scores[10] : " << scores[10] << std::endl;
 ```
 ### Looping through an Array
+
 ```cpp
 for(size_t i {0}; i < 10; ++i) {
 std::cout << "scores[" << i << "] : " << scores[i] << std::endl;
 }
 ```
 ### Writing data into an Array
+
 ```cpp
 int scores[10];
 
@@ -42,6 +44,7 @@ scores[2] = 22;
 scores[22] = 300;
 ```
 ### Writing data with a Loop
+
 ```cpp
 int scores[10];
 
@@ -51,6 +54,7 @@ scores[i] = i*3;
 }
 ```
 ### Initialize the array at declaration
+
 ```cpp
 double salaries[5] {12.7, 7.5, 13.2, 8.1, 9.3};
 ```
@@ -66,6 +70,7 @@ const int multipliers[] {22,3,15};
 multipliers[1] = 20; //cannot change elements of a const array:Error
 ```
 ### Operations on data stored in arrays
+
 ```cpp
 int sum{};
 for(int element : scores){
@@ -121,6 +126,7 @@ std::cout << "message : " << message << std::endl;
 Output: `Hello~~`
 - the above is not a good practice because it will print some garbage along with the main array. (`~` is just shown to represent garbage character.)
 #### Null Termination
+
 ```cpp
 char message[] {'H', 'e', 'l', 'l', 'o', '\0'}; //proper null termination i.e. does not define the size of the array
 std::cout << "message : " << message << std::endl;
@@ -142,6 +148,7 @@ std::cout << "message : " << message << std::endl;
 
 ```
 ### Literal C-String
+
 ```cpp
 char message [] {"Hello"}; //an implicit '\0' character is appended to the end of the string, making it a c-string
 std::cout << "message: " << message << std::endl;
