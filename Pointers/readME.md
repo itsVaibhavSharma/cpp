@@ -47,12 +47,12 @@ p_int1 = &double_var; //compile error
  - Reading the value of the variable whose address is stored in the pointer.
  - Syntax used is `*pointer_name` 
 
-   ```cpp
+```cpp
 int* p_int2 {nullptr};
 int int_data {56};
 p_int2 = &int_data;
-std::cout << "value : " << *p_int2 << std::endl; // Dereferencing a pointer
-    ```
+std::cout << "value : " << *p_int2 << std::endl; //Dereferencing a pointer
+```
     Output: `value : 56`
 ## Declaring pointers to char
 - Can use normal pointer to char like we've been doing for double, int, etc.
