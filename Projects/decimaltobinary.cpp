@@ -16,12 +16,13 @@ return count;
 int main() {
     double a {-1};
     
+    while(a < 0) {
     std::cout << "Please Enter a positive decimal number (base 10)!" << std::endl;
     std::cin >> a;
-    
+    }
     
     int ain = (int)a;
-    double decpart = a - (double)ain;
+    double decpart = (double)a - (double)ain;
 
     int arr1[40] {};
     int div = numberofdiv(ain);
@@ -34,27 +35,25 @@ int main() {
         
     }
     std::cout << a << " in binary = ";
-    for(int j {1}; j<div; j++){
+    for(int j {0}; j < div; j++){
         std::cout << arr1[j];
         
     }
     std::cout << ".";
    
    double k = decpart;
-   while(-0.05 > k || k > 0.05) {
+   
+    if(-0.005 < decpart && decpart < 0.005) {
+    std::cout << "00";
+   } else{
+   while(-0.005 > k || k > 0.005) {
     int temp {0};
     k= (k*2);
     temp = (int)k;
     k = k - (double)temp;
     std::cout << temp;
-    
-
+     }
    }
-
-   for(double k = decpart; -0.05 > k || k > 0.05; k )
-
-
-
 
 
     
