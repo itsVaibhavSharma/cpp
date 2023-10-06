@@ -119,5 +119,5 @@ for (int var : num) {
 ```
 
 
-[Image to understand ranged forLoop](https://cdn.programiz.com/sites/tutorial2program/files/cpp-ranged-for-loop.png)
+![Image to understand ranged forLoop](https://cdn.programiz.com/sites/tutorial2program/files/cpp-ranged-for-loop.png)
 
