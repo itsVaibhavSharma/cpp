@@ -78,3 +78,12 @@ char message[] {"Hello World!"};
 message[0] = 'T';
 std::cout << "message : " << message << std::endl;
 ```
+```output
+Tello World!
+```
+
+## Program Memory Map
+- Lot's of programs running on our OS. We can quickly run out of our memory.
+### Virtual Memory
+A trick that fools your program into thinking it is the only program running in your OS, and all memory resources belongs to it.
+Each Program is abstracted into a process, and each process has access to the memory range 0 - (2**N)-1 where N is 32 on 32 bit systems and 64 on 64 bit systems.
