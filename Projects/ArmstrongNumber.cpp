@@ -3,11 +3,10 @@
 using namespace std;
 
 int numberofdig(int a){
-    int temp = a;
     int count = 0;
-    while((temp) != 0 ) {
+    while((a) != 0 ) {
         count++;
-        temp= (temp/10);
+        a = (a/10);
     }
 return count;
 }
