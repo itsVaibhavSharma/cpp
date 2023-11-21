@@ -1,3 +1,5 @@
+
+
 #include <iostream>
 
 using namespace std;
@@ -16,7 +18,7 @@ int main()
     }
     // code for comparing
 
-    for (size_t j = 0; j < (n); j++)
+    for (size_t j = 0; j < n-1; j++)
     {
         for (size_t i = (j + 1); i < n; i++)
         {

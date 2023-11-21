@@ -4,7 +4,7 @@ using namespace std;
 
 int numberofdig(int a){
     int count = 0;
-    while((a) != 0 ) {
+    while(a != 0 ) {
         count++;
         a = (a/10);
     }
@@ -25,8 +25,8 @@ int main() {
         temp1 /= 10;
         sum = sum + temp2;
         
-       
     }
+    
     if(sum == n){
         cout << n << " is an Armstrong number." << endl;
     } else {
