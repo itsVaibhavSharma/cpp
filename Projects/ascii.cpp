@@ -1,4 +1,4 @@
-// write a program to check whether the given input is nmber, capital letter, small letter or special symbol
+// write a program to check whether the given input is number, capital letter, small letter or special symbol
 
 #include <iostream>
 

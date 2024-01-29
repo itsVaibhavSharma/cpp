@@ -1,0 +1,4 @@
+STRUCTURE IN FILE HANDLING
+    Name                Roll           CppMarks       Attendence     CGPA           
+Vaibhav Sharma           69             100            100            10             
+Jeet Bhardwaj            32             100            80             9.8            
