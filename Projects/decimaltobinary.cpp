@@ -14,6 +14,10 @@ return count;
 }
 
 int main() {
+
+
+    int numberofdiv(int);
+
     double a {-1};
     
     while(a < 0) {
